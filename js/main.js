@@ -69,7 +69,7 @@
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); }
       });
-    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.1 });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.01 });
     reveals.forEach(function (el, i) {
       el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + "ms";
       io.observe(el);

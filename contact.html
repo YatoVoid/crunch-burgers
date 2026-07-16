@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Əlaqə — CRUNCH | Bizimlə danış</title>
+<meta name="description" content="CRUNCH ilə əlaqə — telefon, e-poçt, ünvan və əlaqə forması. Suallar, təkliflər və əməkdaşlıq üçün yazın.">
+<meta name="theme-color" content="#1B140F">
+<link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="CRUNCH — Bakının əl ilə əzilmiş burgerləri">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;700&display=swap&subset=latin,latin-ext,cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<script defer src="data/strings.js"></script>
+<script defer src="js/i18n.js"></script>
+</head>
+<body data-page="contact">
+<script>document.documentElement.classList.add('js');</script>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- @partial:header -->
+<header class="site-header on-dark">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="CRUNCH">
+      <span style="font-family:var(--font-display);font-weight:700;font-size:1.6rem;letter-spacing:.02em;color:var(--c-cream)">CRUN<span style="color:var(--c-flame)">C</span>H</span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="menu.html" data-i18n="nav.menu">Menyu</a>
+      <a href="locations.html" data-i18n="nav.locations">Filiallar</a>
+      <a href="merch.html" data-i18n="nav.merch">Merç</a>
+      <a href="app.html" data-i18n="nav.app">Tətbiq</a>
+      <a href="about.html" data-i18n="nav.about">Haqqımızda</a>
+      <a href="contact.html" aria-current="page" data-i18n="nav.contact">Əlaqə</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="radiogroup" aria-label="Language">
+        <button type="button" data-lang="az" role="radio" aria-checked="true">AZ</button>
+        <button type="button" data-lang="en" role="radio" aria-checked="false">EN</button>
+        <button type="button" data-lang="ru" role="radio" aria-checked="false">RU</button>
+      </div>
+      <a class="btn btn--flame btn--sm" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a>
+      <button class="nav-toggle" aria-label="Menyunu aç" data-i18n-attr="aria-label:nav.open" aria-expanded="false" aria-controls="drawer">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<aside class="drawer on-dark" id="drawer" aria-label="Menu">
+  <a class="drawer-link" href="menu.html" data-i18n="nav.menu">Menyu</a>
+  <a class="drawer-link" href="locations.html" data-i18n="nav.locations">Filiallar</a>
+  <a class="drawer-link" href="merch.html" data-i18n="nav.merch">Merç</a>
+  <a class="drawer-link" href="app.html" data-i18n="nav.app">Tətbiq</a>
+  <a class="drawer-link" href="about.html" data-i18n="nav.about">Haqqımızda</a>
+  <a class="drawer-link" href="contact.html" aria-current="page" data-i18n="nav.contact">Əlaqə</a>
+  <a class="btn btn--flame btn--block drawer-cta" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a>
+</aside>
+<div class="scrim"></div>
+<!-- /@partial:header -->
+
+<main id="main">
+
+  <!-- Page hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" data-i18n="contact.hero.eyebrow">Əlaqə</span>
+      <h1 data-i18n="contact.hero.title">Bizimlə danış</h1>
+      <p class="lede" data-i18n="contact.hero.sub">Sual, təklif və ya əməkdaşlıq — hamısına açığıq.</p>
+    </div>
+  </section>
+
+  <!-- Details + form -->
+  <section class="section" aria-label="Əlaqə">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <h2 data-i18n="contact.details.title">Əlaqə məlumatları</h2>
+        <div class="contact-list">
+          <div>
+            <span class="label" data-i18n="contact.details.phone">Telefon</span>
+            <a href="tel:+994000000000">+994 00 000 00 00</a>
+          </div>
+          <div>
+            <span class="label" data-i18n="contact.details.email">E-poçt</span>
+            <a href="mailto:salam@crunchburger.az">salam@crunchburger.az</a>
+          </div>
+          <div>
+            <span class="label" data-i18n="contact.details.address">Ünvan</span>
+            <p data-i18n="footer.address">Dəniz Mall, Bakı, Azərbaycan</p>
+          </div>
+          <div>
+            <span class="label" data-i18n="contact.details.instagram">Instagram</span>
+            <a href="https://www.instagram.com/crunch.burger.baku/" target="_blank" rel="noopener">@crunch.burger.baku</a>
+          </div>
+        </div>
+      </div>
+      <!-- TODO: wire to owner's form endpoint -->
+      <form class="contact-form reveal" action="" method="post">
+        <h2 data-i18n="contact.form.title">Mesaj göndər</h2>
+        <div>
+          <label for="cf-name" data-i18n="contact.form.name">Ad</label>
+          <input id="cf-name" name="name" type="text" required autocomplete="name"
+                 placeholder="Adınız" data-i18n-attr="placeholder:contact.form.namePh">
+        </div>
+        <div>
+          <label for="cf-email" data-i18n="contact.form.email">E-poçt</label>
+          <input id="cf-email" name="email" type="email" required autocomplete="email"
+                 placeholder="siz@nümunə.az" data-i18n-attr="placeholder:contact.form.emailPh">
+        </div>
+        <div>
+          <label for="cf-message" data-i18n="contact.form.message">Mesaj</label>
+          <textarea id="cf-message" name="message" required
+                    placeholder="Mesajınızı yazın…" data-i18n-attr="placeholder:contact.form.messagePh"></textarea>
+        </div>
+        <!-- Honeypot: hidden from humans, catches bots -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="cf-website">Website</label>
+          <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn btn--flame" type="submit"><span data-i18n="contact.form.send">Göndər</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section on-paper" aria-labelledby="faq-h">
+    <div class="container">
+      <div class="faq reveal">
+        <h2 id="faq-h" data-i18n="contact.faq.title">Tez-tez verilən suallar</h2>
+        <details>
+          <summary data-i18n="contact.faq.q1">Çatdırılma edirsiniz?</summary>
+          <p data-i18n="contact.faq.a1">Bəli — bütün filiallardan Wolt vasitəsilə çatdırırıq. Sifariş düyməsi hər səhifədədir.</p>
+        </details>
+        <details>
+          <summary data-i18n="contact.faq.q2">Vegetarian seçimlər varmı?</summary>
+          <p data-i18n="contact.faq.a2">Bəli, menyuda vegetarian nişanlı məhsullar var — kələm salatından dondurmaya qədər.</p>
+        </details>
+        <details>
+          <summary data-i18n="contact.faq.q3">Masa rezervasiyası mümkündürmü?</summary>
+          <p data-i18n="contact.faq.a3">Filiallarımız növbə qaydası ilə işləyir, amma 8+ nəfərlik qruplar üçün bizə zəng edin.</p>
+        </details>
+        <details>
+          <summary data-i18n="contact.faq.q4">Doğum günü və tədbirlər üçün sifariş qəbul edirsiniz?</summary>
+          <p data-i18n="contact.faq.a4">Əlbəttə. Formadan yazın və ya zəng edin — korporativ və tədbir menyularımız var.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @partial:footer -->
+<footer class="site-footer on-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:1.5rem;color:var(--c-cream)">CRUN<span style="color:var(--c-flame)">C</span>H</span>
+        <p data-i18n="footer.tagline">Bakının əl ilə əzilmiş burger yeri. İsti, sadə, dadlı.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/crunch.burger.baku/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@crunch.burger.baku" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.3 1.9 4 4 4.2v2.9c-1.5.1-2.8-.4-4-1.2v5.6a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3a2.6 2.6 0 1 0 1.8 2.5V3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.explore">Kəşf et</h4>
+        <a href="menu.html" data-i18n="nav.menu">Menyu</a>
+        <a href="locations.html" data-i18n="nav.locations">Filiallar</a>
+        <a href="merch.html" data-i18n="nav.merch">Merç</a>
+        <a href="about.html" data-i18n="nav.about">Haqqımızda</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.visit">Bizə gəl</h4>
+        <p data-i18n="footer.address">Dəniz Mall, Bakı, Azərbaycan</p>
+        <a href="tel:+994000000000">+994 00 000 00 00</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.hours">İş saatları</h4>
+        <p data-i18n="footer.hoursVal">Hər gün 11:00 – 23:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CRUNCH. <span data-i18n="footer.rights">Bütün hüquqlar qorunur.</span></span>
+      <div class="lang-switch" role="radiogroup" aria-label="Language">
+        <button type="button" data-lang="az" role="radio" aria-checked="true">AZ</button>
+        <button type="button" data-lang="en" role="radio" aria-checked="false">EN</button>
+        <button type="button" data-lang="ru" role="radio" aria-checked="false">RU</button>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /@partial:footer -->
+
+<script defer src="js/main.js"></script>
+</body>
+</html>

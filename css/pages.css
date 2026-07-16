@@ -95,4 +95,130 @@
 
 /* — Page hero (inner pages) — */
 .page-hero { background: var(--c-char); color: var(--c-cream); padding-block: calc(var(--section-pad) * .7); text-align: center; }
+.page-hero .eyebrow { justify-content: center; margin-bottom: var(--sp-3); }
+.page-hero h1 { margin-block: var(--sp-2) var(--sp-4); }
 .page-hero .lede { margin-inline: auto; }
+
+/* ============================================================
+   Menu page
+   ============================================================ */
+body[data-page="menu"] .cat-rail {
+  position: sticky; top: var(--header-h); z-index: 90;
+  background: var(--c-cream); border-bottom: 1px solid var(--c-line);
+}
+body[data-page="menu"] .cat-rail .rail-track {
+  display: flex; gap: var(--sp-2); overflow-x: auto; padding-block: var(--sp-3);
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+body[data-page="menu"] .cat-rail .rail-track::-webkit-scrollbar { display: none; }
+body[data-page="menu"] .rail-pill {
+  flex: 0 0 auto; display: inline-flex; align-items: center;
+  min-height: 44px; padding: .5rem 1.1rem; border-radius: var(--r-full);
+  font-family: var(--font-display); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .04em; font-size: var(--fs-300); color: var(--c-smoke);
+  box-shadow: inset 0 0 0 1.5px var(--c-line); white-space: nowrap;
+  transition: background-color var(--t-fast), color var(--t-fast), box-shadow var(--t-fast);
+}
+body[data-page="menu"] .rail-pill:hover { color: var(--c-char); box-shadow: inset 0 0 0 1.5px var(--c-char); }
+body[data-page="menu"] .rail-pill.is-active {
+  background: var(--c-flame-deep); color: #fff; box-shadow: none;
+}
+body[data-page="menu"] .menu-cat { padding-block: var(--sp-12) var(--sp-4); scroll-margin-top: calc(var(--header-h) + 70px); }
+body[data-page="menu"] .cat-head {
+  font-size: var(--fs-800); margin-bottom: var(--sp-6);
+  display: flex; align-items: baseline; gap: var(--sp-2); flex-wrap: wrap;
+}
+body[data-page="menu"] .cat-head .cat-index { color: var(--c-flame-deep); font-size: .6em; letter-spacing: .06em; }
+body[data-page="menu"] .menu-item .tag-row { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+body[data-page="menu"] .menu-noscript {
+  padding: var(--sp-4); background: var(--c-paper); border: 1px solid var(--c-line);
+  border-radius: var(--r-md); margin-block: var(--sp-8);
+}
+
+/* ============================================================
+   Locations page
+   ============================================================ */
+body[data-page="locations"] .loc-layout { display: grid; gap: var(--sp-8); grid-template-columns: 1fr; align-items: start; }
+body[data-page="locations"] .map-embed {
+  position: relative; aspect-ratio: 4 / 3; border-radius: var(--r-lg);
+  overflow: hidden; box-shadow: var(--shadow-2); background: var(--c-paper);
+}
+body[data-page="locations"] .map-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+body[data-page="locations"] .stores-list { display: grid; gap: var(--sp-4); }
+body[data-page="locations"] .store-card:hover { transform: none; }
+body[data-page="locations"] .store-top { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2); flex-wrap: wrap; }
+body[data-page="locations"] .store-hours { margin-top: calc(var(--sp-1) * -1); }
+body[data-page="locations"] .store-status { font-size: var(--fs-300); font-weight: 700; color: var(--c-smoke); }
+body[data-page="locations"] .badge--open { background: var(--c-lettuce); color: #fff; }
+body[data-page="locations"] .badge--closed { background: var(--c-line); color: var(--c-smoke); }
+body[data-page="locations"] .store-card .row { justify-content: flex-start; }
+@media (min-width: 900px) {
+  body[data-page="locations"] .loc-layout { grid-template-columns: 1.1fr .9fr; }
+  body[data-page="locations"] .map-embed { position: sticky; top: calc(var(--header-h) + var(--sp-4)); aspect-ratio: 4 / 5; }
+}
+
+/* ============================================================
+   Merch page
+   ============================================================ */
+body[data-page="merch"] .merch-grid { display: grid; gap: var(--sp-4); grid-template-columns: repeat(2, 1fr); }
+body[data-page="merch"] .merch-grid .card .media { aspect-ratio: 4 / 5; }
+body[data-page="merch"] .merch-note { font-size: var(--fs-200); color: var(--c-smoke); text-transform: uppercase; letter-spacing: .06em; font-family: var(--font-display); }
+@media (min-width: 768px) { body[data-page="merch"] .merch-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1100px) { body[data-page="merch"] .merch-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* ============================================================
+   App page
+   ============================================================ */
+body[data-page="app"] .app-badges { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-6); }
+body[data-page="app"] .benefit-grid { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+body[data-page="app"] .benefit-grid .card .body { gap: var(--sp-2); }
+@media (min-width: 768px) { body[data-page="app"] .benefit-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ============================================================
+   About page
+   ============================================================ */
+body[data-page="about"] .prose { max-width: 65ch; }
+body[data-page="about"] .prose p + p { margin-top: var(--sp-4); }
+body[data-page="about"] .prose .lede { margin-bottom: var(--sp-6); }
+body[data-page="about"] .values-grid { display: grid; gap: var(--sp-4); grid-template-columns: 1fr; }
+@media (min-width: 768px) { body[data-page="about"] .values-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* ============================================================
+   Contact page
+   ============================================================ */
+body[data-page="contact"] .contact-grid { display: grid; gap: var(--sp-8); grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { body[data-page="contact"] .contact-grid { grid-template-columns: .9fr 1.1fr; } }
+body[data-page="contact"] .contact-list { display: grid; gap: var(--sp-4); margin-top: var(--sp-6); }
+body[data-page="contact"] .contact-list .label {
+  font-family: var(--font-display); font-weight: 600; text-transform: uppercase;
+  letter-spacing: .06em; font-size: var(--fs-200); color: var(--c-flame-deep); display: block;
+}
+body[data-page="contact"] .contact-list a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; }
+body[data-page="contact"] .contact-list a:hover { color: var(--c-flame-deep); }
+body[data-page="contact"] .contact-form {
+  background: var(--c-white); border: 1px solid var(--c-line); border-radius: var(--r-lg);
+  padding: var(--sp-6); box-shadow: var(--shadow-1); display: grid; gap: var(--sp-4);
+}
+body[data-page="contact"] .contact-form label { font-weight: 700; font-size: var(--fs-300); display: block; margin-bottom: var(--sp-1); }
+body[data-page="contact"] .contact-form input,
+body[data-page="contact"] .contact-form textarea {
+  width: 100%; min-height: 48px; padding: .75rem 1rem;
+  border: 1.5px solid var(--c-line); border-radius: var(--r-sm);
+  background: var(--c-cream); color: var(--c-char);
+}
+body[data-page="contact"] .contact-form textarea { min-height: 140px; resize: vertical; }
+body[data-page="contact"] .contact-form input:focus-visible,
+body[data-page="contact"] .contact-form textarea:focus-visible { outline-offset: 0; border-color: transparent; }
+body[data-page="contact"] .hp-field { position: absolute !important; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+body[data-page="contact"] .faq { max-width: 760px; }
+body[data-page="contact"] .faq details {
+  border: 1px solid var(--c-line); border-radius: var(--r-md);
+  background: var(--c-white); margin-top: var(--sp-3);
+}
+body[data-page="contact"] .faq summary {
+  cursor: pointer; padding: var(--sp-4); min-height: 44px;
+  font-family: var(--font-display); font-weight: 600; font-size: var(--fs-500);
+  text-transform: uppercase; letter-spacing: .02em; list-style-position: inside;
+}
+body[data-page="contact"] .faq details[open] summary { border-bottom: 1px solid var(--c-line); }
+body[data-page="contact"] .faq details p { padding: var(--sp-4); color: var(--c-smoke); }
