@@ -1,0 +1,56 @@
+/* ============================================================
+   CRUNCH — Design tokens ("CHAR & FLAME")
+   Single source of truth. Everything else consumes these.
+   ============================================================ */
+:root {
+  /* — Color — */
+  --c-char: #1B140F;        /* dark sections, primary text on light */
+  --c-smoke: #3B322B;       /* secondary text on light */
+  --c-cream: #FAF4EA;       /* page background */
+  --c-paper: #F1E6D4;       /* card / alt-section background */
+  --c-line: #E2D5BF;        /* hairlines */
+  --c-flame: #FF4D14;       /* bright accent: large/graphic only */
+  --c-flame-deep: #C43A05;  /* flame as text on cream / button bg */
+  --c-mustard: #FFB800;     /* badges, price highlights */
+  --c-lettuce: #2E7D32;     /* "open now" status only */
+  --c-white: #FFFFFF;
+  --c-char-80: rgb(27 20 15 / .8);
+
+  /* — Type — */
+  --font-display: "Oswald", "Arial Narrow", "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --fs-900: clamp(2.75rem, 1.5rem + 6.5vw, 6.5rem);
+  --fs-800: clamp(2rem, 1.2rem + 3.5vw, 3.75rem);
+  --fs-700: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+  --fs-600: 1.25rem;
+  --fs-500: 1.125rem;
+  --fs-400: 1rem;
+  --fs-300: .875rem;
+  --fs-200: .75rem;
+
+  /* — Space (4px base) — */
+  --sp-1: .25rem; --sp-2: .5rem; --sp-3: .75rem; --sp-4: 1rem;
+  --sp-6: 1.5rem; --sp-8: 2rem; --sp-12: 3rem; --sp-16: 4rem; --sp-24: 6rem;
+  --section-pad: clamp(3.5rem, 8vw, 7rem);
+
+  /* — Radius — */
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-full: 999px;
+
+  /* — Shadow (warm-tinted, never gray) — */
+  --shadow-1: 0 1px 3px rgb(27 20 15 / .08);
+  --shadow-2: 0 6px 20px rgb(27 20 15 / .12);
+  --shadow-3: 0 16px 44px rgb(27 20 15 / .18);
+
+  /* — Motion — */
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-in-out: cubic-bezier(.65, 0, .35, 1);
+  --t-fast: 150ms; --t-med: 280ms; --t-slow: 520ms;
+
+  /* — Layout — */
+  --container: 1240px;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --header-h: 64px;
+}
+@media (min-width: 1024px) {
+  :root { --header-h: 72px; }
+}

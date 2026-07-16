@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CRUNCH — Bakının əl ilə əzilmiş burgerləri</title>
+<meta name="description" content="CRUNCH — sifarişlə əzilən köftə, hər gün bişən çörək, evdə hazırlanan souslar. Bakı boyu filiallar.">
+<meta name="theme-color" content="#1B140F">
+<link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="CRUNCH — Bakının əl ilə əzilmiş burgerləri">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;700&display=swap&subset=latin,latin-ext,cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<script defer src="data/strings.js"></script>
+<script defer src="js/i18n.js"></script>
+</head>
+<body data-page="home">
+<script>document.documentElement.classList.add('js');</script>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- @partial:header -->
+<header class="site-header on-dark">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="CRUNCH">
+      <span style="font-family:var(--font-display);font-weight:700;font-size:1.6rem;letter-spacing:.02em;color:var(--c-cream)">CRUN<span style="color:var(--c-flame)">C</span>H</span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="menu.html" data-i18n="nav.menu">Menyu</a>
+      <a href="locations.html" data-i18n="nav.locations">Filiallar</a>
+      <a href="merch.html" data-i18n="nav.merch">Merç</a>
+      <a href="app.html" data-i18n="nav.app">Tətbiq</a>
+      <a href="about.html" data-i18n="nav.about">Haqqımızda</a>
+      <a href="contact.html" data-i18n="nav.contact">Əlaqə</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="radiogroup" aria-label="Language">
+        <button type="button" data-lang="az" role="radio" aria-checked="true">AZ</button>
+        <button type="button" data-lang="en" role="radio" aria-checked="false">EN</button>
+        <button type="button" data-lang="ru" role="radio" aria-checked="false">RU</button>
+      </div>
+      <a class="btn btn--flame btn--sm" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a>
+      <button class="nav-toggle" aria-label="Menyunu aç" data-i18n-attr="aria-label:nav.open" aria-expanded="false" aria-controls="drawer">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<aside class="drawer on-dark" id="drawer" aria-label="Menu">
+  <a class="drawer-link" href="menu.html" data-i18n="nav.menu">Menyu</a>
+  <a class="drawer-link" href="locations.html" data-i18n="nav.locations">Filiallar</a>
+  <a class="drawer-link" href="merch.html" data-i18n="nav.merch">Merç</a>
+  <a class="drawer-link" href="app.html" data-i18n="nav.app">Tətbiq</a>
+  <a class="drawer-link" href="about.html" data-i18n="nav.about">Haqqımızda</a>
+  <a class="drawer-link" href="contact.html" data-i18n="nav.contact">Əlaqə</a>
+  <a class="btn btn--flame btn--block drawer-cta" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a>
+</aside>
+<div class="scrim"></div>
+<!-- /@partial:header -->
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero on-dark">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="home.hero.eyebrow">Bakı · Əl ilə əzilmiş</span>
+        <h1><span data-i18n="home.hero.title">Əsl</span> <span class="flame" data-i18n="home.hero.titleFlame">CRUNCH</span> <span data-i18n="home.hero.title2">dadı</span></h1>
+        <p class="lede" data-i18n="home.hero.sub">Sifarişlə əzilən köftə, hər gün bişən çörək, evdə hazırlanan souslar. Sadə, isti və dadlı.</p>
+        <div class="hero-cta">
+          <a class="btn btn--flame" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a>
+          <a class="btn btn--ghost" href="menu.html"><span data-i18n="cta.viewMenu">Menyuya bax</span></a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>100%</b><span data-i18n="home.stat.smashed">sifarişlə əzilir</span></div>
+          <div class="stat"><b>24h</b><span data-i18n="home.stat.fresh">hər gün təzə</span></div>
+          <div class="stat"><b>4</b><span data-i18n="home.stat.stores">filial · Bakı</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/img/hero/burger.svg" width="640" height="520" alt="CRUNCH smash burger" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span data-i18n="home.marquee">ƏL İLƏ ƏZİLMİŞ · HƏR GÜN TƏZƏ · BAKI · SİFARİŞLƏ BİŞİR</span>
+      <span data-i18n="home.marquee">ƏL İLƏ ƏZİLMİŞ · HƏR GÜN TƏZƏ · BAKI · SİFARİŞLƏ BİŞİR</span>
+    </div>
+  </div>
+
+  <!-- Popular products -->
+  <section class="section" aria-labelledby="pop-h">
+    <div class="container">
+      <div class="section-head between reveal">
+        <div>
+          <span class="eyebrow" data-i18n="home.popular.eyebrow">Sevimlilər</span>
+          <h2 id="pop-h" data-i18n="home.popular.title">Ən çox sifariş olunan</h2>
+        </div>
+        <a class="btn btn--ghost btn--sm" href="menu.html"><span data-i18n="cta.viewMenu">Menyuya bax</span></a>
+      </div>
+      <div class="product-grid scroll">
+        <article class="card reveal" style="position:relative">
+          <div class="media"><img src="assets/img/hero/burger.svg" alt="Double smash burger" loading="lazy"></div>
+          <div class="body">
+            <h3>Double Smash</h3>
+            <p class="desc">2× köftə, cheddar, CRUNCH sousu</p>
+            <div class="row"><span class="price">12.90 ₼</span><a class="btn btn--flame btn--sm stretch" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a></div>
+          </div>
+        </article>
+        <article class="card reveal" style="position:relative">
+          <div class="media"><img src="assets/img/hero/burger.svg" alt="Classic cheeseburger" loading="lazy"></div>
+          <div class="body">
+            <h3>Classic Cheese</h3>
+            <p class="desc">Köftə, cheddar, turşu, sous</p>
+            <div class="row"><span class="price">8.90 ₼</span><a class="btn btn--flame btn--sm stretch" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a></div>
+          </div>
+        </article>
+        <article class="card reveal" style="position:relative">
+          <div class="media"><img src="assets/img/hero/burger.svg" alt="Spicy chicken burger" loading="lazy"></div>
+          <div class="body">
+            <h3>Spicy Chicken</h3>
+            <p class="desc">Xırtıldayan toyuq, acı sous</p>
+            <div class="row"><span class="price">10.50 ₼</span><a class="btn btn--flame btn--sm stretch" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a></div>
+          </div>
+        </article>
+        <article class="card reveal" style="position:relative">
+          <div class="media"><img src="assets/img/hero/burger.svg" alt="Loaded fries" loading="lazy"></div>
+          <div class="body">
+            <h3>Loaded Fries</h3>
+            <p class="desc">Kartof, pendir sousu, jalapeño</p>
+            <div class="row"><span class="price">6.50 ₼</span><a class="btn btn--flame btn--sm stretch" href="https://wolt.com/az/aze/baku/restaurant/crunch-burger" target="_blank" rel="noopener"><span data-i18n="cta.order">Sifariş et</span></a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craft split -->
+  <section class="section on-paper" aria-labelledby="craft-h">
+    <div class="container split reverse">
+      <div class="split-media reveal"><img src="assets/img/hero/burger.svg" width="640" height="520" alt="Burger being smashed on the grill" loading="lazy"></div>
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="home.craft.eyebrow">Bizim üsul</span>
+        <h2 id="craft-h" data-i18n="home.craft.title">Qısayol yoxdur</h2>
+        <div class="claims" style="margin-top:var(--sp-6)">
+          <div class="claim">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M2 12h20" stroke-linecap="round"/></svg></span>
+            <div><h3 data-i18n="home.craft.1t">Sifarişlə əzilir</h3><p data-i18n="home.craft.1b">Hər köftə isti tavada, siz sifariş verəndə əzilir.</p></div>
+          </div>
+          <div class="claim">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg></span>
+            <div><h3 data-i18n="home.craft.2t">Yerli çörək</h3><p data-i18n="home.craft.2b">Yumşaq brioş çörəklər hər səhər yerli bişirilir.</p></div>
+          </div>
+          <div class="claim">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><h3 data-i18n="home.craft.3t">Evdə souslar</h3><p data-i18n="home.craft.3b">İmza souslarımız mətbəxdə, sıfırdan hazırlanır.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locator teaser -->
+  <section class="section on-dark" aria-labelledby="loc-h">
+    <div class="container teaser">
+      <div class="reveal"><div class="map-static" role="img" aria-label="Map of Baku"></div></div>
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="home.locator.eyebrow">Bizi tap</span>
+        <h2 id="loc-h" data-i18n="home.locator.title">Yaxınlıqda bir CRUNCH</h2>
+        <p class="lede" data-i18n="home.locator.sub">Bakı boyu filiallar. Ən yaxınını seç və gəl.</p>
+        <div class="store-mini" style="margin-top:var(--sp-6)">
+          <h3>CRUNCH Seabreeze</h3>
+          <p class="status" data-i18n="home.locator.status">İndi açıqdır · 23:00-a qədər</p>
+          <p style="color:var(--c-smoke);font-size:var(--fs-300)" data-i18n="footer.address">Dəniz Mall, Bakı, Azərbaycan</p>
+        </div>
+        <a class="btn btn--flame" style="margin-top:var(--sp-6)" href="locations.html"><span data-i18n="cta.allLocations">Bütün filiallar</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- App teaser -->
+  <section class="section" aria-labelledby="app-h">
+    <div class="container teaser">
+      <div class="reveal"><div class="phone-mock" aria-hidden="true"></div></div>
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="home.app.eyebrow">CRUNCH tətbiqi</span>
+        <h2 id="app-h" data-i18n="home.app.title">Sifariş ver, xal qazan</h2>
+        <p class="lede" data-i18n="home.app.sub">Sadiqlik xalları, eksklüziv təkliflər və daha sürətli sifariş. Cibində.</p>
+        <a class="btn btn--flame" style="margin-top:var(--sp-6)" href="app.html"><span data-i18n="nav.app">Tətbiq</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- @partial:footer -->
+<footer class="site-footer on-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <span style="font-family:var(--font-display);font-weight:700;font-size:1.5rem;color:var(--c-cream)">CRUN<span style="color:var(--c-flame)">C</span>H</span>
+        <p data-i18n="footer.tagline">Bakının əl ilə əzilmiş burger yeri. İsti, sadə, dadlı.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/crunch.burger.baku/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@crunch.burger.baku" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.3 1.9 4 4 4.2v2.9c-1.5.1-2.8-.4-4-1.2v5.6a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3a2.6 2.6 0 1 0 1.8 2.5V3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.explore">Kəşf et</h4>
+        <a href="menu.html" data-i18n="nav.menu">Menyu</a>
+        <a href="locations.html" data-i18n="nav.locations">Filiallar</a>
+        <a href="merch.html" data-i18n="nav.merch">Merç</a>
+        <a href="about.html" data-i18n="nav.about">Haqqımızda</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.visit">Bizə gəl</h4>
+        <p data-i18n="footer.address">Dəniz Mall, Bakı, Azərbaycan</p>
+        <a href="tel:+994000000000">+994 00 000 00 00</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.hours">İş saatları</h4>
+        <p data-i18n="footer.hoursVal">Hər gün 11:00 – 23:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 CRUNCH. <span data-i18n="footer.rights">Bütün hüquqlar qorunur.</span></span>
+      <div class="lang-switch" role="radiogroup" aria-label="Language">
+        <button type="button" data-lang="az" role="radio" aria-checked="true">AZ</button>
+        <button type="button" data-lang="en" role="radio" aria-checked="false">EN</button>
+        <button type="button" data-lang="ru" role="radio" aria-checked="false">RU</button>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /@partial:footer -->
+
+<script defer src="js/main.js"></script>
+</body>
+</html>
