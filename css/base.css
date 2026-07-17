@@ -76,7 +76,7 @@ p { text-wrap: pretty; overflow-wrap: anywhere; }
   font-size: var(--fs-300); color: var(--c-flame-deep);
   display: inline-flex; align-items: center; gap: .6rem;
 }
-.on-dark .eyebrow { color: var(--c-mustard); }
+.on-dark .eyebrow, .page-hero .eyebrow { color: var(--c-mustard); }
 .eyebrow::before { content: ""; width: 26px; height: 3px; background: currentColor; }
 
 .lede { font-size: var(--fs-500); color: var(--c-smoke); max-width: 52ch; }
