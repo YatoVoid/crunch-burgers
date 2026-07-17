@@ -96,3 +96,14 @@ html.js .reveal.is-visible {
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* — Interaction feedback (works on touch too) — */
+.btn { transition: transform var(--t-fast) var(--ease-out), background var(--t-fast) var(--ease-out), box-shadow var(--t-fast) var(--ease-out); }
+.btn:active { transform: translateY(1px) scale(.98); }
+a, button { -webkit-tap-highlight-color: transparent; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero burger drifts gently to add life on load, desktop and mobile alike. */
+  .hero-media img { animation: crunch-float 6s var(--ease-in-out) infinite; }
+  @keyframes crunch-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+}
