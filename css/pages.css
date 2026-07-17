@@ -149,6 +149,9 @@ body[data-page="locations"] .loc-layout { display: grid; gap: var(--sp-8); grid-
 body[data-page="locations"] .map-embed {
   position: relative; aspect-ratio: 4 / 3; border-radius: var(--r-lg);
   overflow: hidden; box-shadow: var(--shadow-2); background: var(--c-paper);
+  /* Contain Leaflet's high internal z-indexes so the map can't sit above the
+     mobile nav drawer/scrim. */
+  z-index: 0; isolation: isolate;
 }
 body[data-page="locations"] .map-embed iframe,
 body[data-page="locations"] .map-embed .leaflet-container { width: 100%; height: 100%; border: 0; display: block; background: var(--c-paper); }

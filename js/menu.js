@@ -127,8 +127,17 @@
     rail.querySelectorAll(".rail-pill").forEach(function (a) {
       var on = a.getAttribute("href") === "#" + id;
       a.classList.toggle("is-active", on);
-      if (on) a.setAttribute("aria-current", "true");
-      else a.removeAttribute("aria-current");
+      if (on) {
+        a.setAttribute("aria-current", "true");
+        // Keep the highlighted pill in view: slide the rail so it's centred.
+        // Measured from live rects so it works regardless of offset parents.
+        var railRect = rail.getBoundingClientRect();
+        var pillRect = a.getBoundingClientRect();
+        var delta = (pillRect.left - railRect.left) - (rail.clientWidth - pillRect.width) / 2;
+        if (Math.abs(delta) > 4) rail.scrollTo({ left: rail.scrollLeft + delta, behavior: "smooth" });
+      } else {
+        a.removeAttribute("aria-current");
+      }
     });
   }
   function initSpy() {
