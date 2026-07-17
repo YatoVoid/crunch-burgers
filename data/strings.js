@@ -38,7 +38,7 @@ window.I18N = {
     "footer.tagline": "Bakının əl ilə əzilmiş burger yeri. İsti, sadə, dadlı.",
     "footer.explore": "Kəşf et", "footer.visit": "Bizə gəl", "footer.hours": "İş saatları",
     "footer.hoursVal": "Hər gün 11:00 – 23:00", "footer.follow": "İzlə",
-    "footer.rights": "Bütün hüquqlar qorunur.", "footer.address": "Dəniz Mall, Bakı, Azərbaycan",
+    "footer.rights": "Bütün hüquqlar qorunur.", "footer.address": "Bakı üzrə 3 filial",
 
     "menu.hero.eyebrow": "Menyu", "menu.hero.title": "Bütün dadlar burada",
     "menu.hero.sub": "Sifarişlə əzilən burgerlərdən ev limonadına qədər — hamısı təzə, hamısı yerində.",
@@ -52,7 +52,7 @@ window.I18N = {
     "loc.listTitle": "Filiallarımız",
     "loc.openNow": "İndi açıqdır", "loc.closed": "Bağlıdır",
     "loc.opensAt": "Açılır: {time}", "loc.closesAt": "Bağlanır: {time}",
-    "loc.directions": "Yol tarifi", "loc.nearest": "Sənə ən yaxın",
+    "loc.directions": "Yol tarifi", "loc.nearest": "Sənə ən yaxın", "menu.near.label": "Sənə ən yaxın filial", "menu.near.note": "menyu bütün filiallarda eynidir",
     "loc.noscript": "Canlı filial statusu üçün JavaScript tələb olunur.",
 
     "merch.hero.eyebrow": "Merç", "merch.hero.title": "CRUNCH-u əynində gəzdir",
@@ -133,7 +133,7 @@ window.I18N = {
     "footer.tagline": "Baku's hand-smashed burger joint. Hot, simple, delicious.",
     "footer.explore": "Explore", "footer.visit": "Visit us", "footer.hours": "Hours",
     "footer.hoursVal": "Every day 11:00 – 23:00", "footer.follow": "Follow",
-    "footer.rights": "All rights reserved.", "footer.address": "Deniz Mall, Baku, Azerbaijan",
+    "footer.rights": "All rights reserved.", "footer.address": "3 branches across Baku",
 
     "menu.hero.eyebrow": "Menu", "menu.hero.title": "All the good stuff",
     "menu.hero.sub": "From smashed-to-order burgers to house lemonade — everything fresh, everything on point.",
@@ -147,7 +147,7 @@ window.I18N = {
     "loc.listTitle": "Our stores",
     "loc.openNow": "Open now", "loc.closed": "Closed",
     "loc.opensAt": "Opens at {time}", "loc.closesAt": "Closes at {time}",
-    "loc.directions": "Directions", "loc.nearest": "Closest to you",
+    "loc.directions": "Directions", "loc.nearest": "Closest to you", "menu.near.label": "Your nearest branch", "menu.near.note": "the menu is the same at every branch",
     "loc.noscript": "Live store status requires JavaScript.",
 
     "merch.hero.eyebrow": "Merch", "merch.hero.title": "Wear the CRUNCH",
@@ -228,7 +228,7 @@ window.I18N = {
     "footer.tagline": "Бургерная Баку с ручной обжаркой. Горячо, просто, вкусно.",
     "footer.explore": "Разделы", "footer.visit": "Приходите", "footer.hours": "Часы работы",
     "footer.hoursVal": "Ежедневно 11:00 – 23:00", "footer.follow": "Мы в соцсетях",
-    "footer.rights": "Все права защищены.", "footer.address": "Дениз Молл, Баку, Азербайджан",
+    "footer.rights": "Все права защищены.", "footer.address": "3 филиала в Баку",
 
     "menu.hero.eyebrow": "Меню", "menu.hero.title": "Всё самое вкусное",
     "menu.hero.sub": "От бургеров под заказ до домашнего лимонада — всё свежее, всё как надо.",
@@ -242,7 +242,7 @@ window.I18N = {
     "loc.listTitle": "Наши точки",
     "loc.openNow": "Открыто", "loc.closed": "Закрыто",
     "loc.opensAt": "Откроется в {time}", "loc.closesAt": "Закроется в {time}",
-    "loc.directions": "Маршрут", "loc.nearest": "Ближайший к вам",
+    "loc.directions": "Маршрут", "loc.nearest": "Ближайший к вам", "menu.near.label": "Ближайший к вам филиал", "menu.near.note": "меню одинаковое во всех филиалах",
     "loc.noscript": "Для живого статуса точек требуется JavaScript.",
 
     "merch.hero.eyebrow": "Мерч", "merch.hero.title": "Носи CRUNCH",

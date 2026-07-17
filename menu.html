@@ -74,6 +74,14 @@
     </div>
   </section>
 
+  <!-- Nearest-branch banner (shown once geolocation resolves) -->
+  <div class="loc-banner" data-nearest-banner hidden>
+    <div class="container loc-banner-inner">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span><span data-i18n="menu.near.label">Sənə ən yaxın filial</span>: <strong data-nearest-store></strong> · <span data-i18n="menu.near.note">menyu bütün filiallarda eynidir</span></span>
+    </div>
+  </div>
+
   <!-- Sticky category rail (pills rendered by js/menu.js) -->
   <nav class="cat-rail" aria-label="Menyu kateqoriyaları" data-i18n-attr="aria-label:menu.rail.label">
     <div class="container">
@@ -115,7 +123,7 @@
       <div class="footer-col">
         <h4 data-i18n="footer.visit">Bizə gəl</h4>
         <p data-i18n="footer.address">Dəniz Mall, Bakı, Azərbaycan</p>
-        <a href="tel:+994000000000">+994 00 000 00 00</a>
+        <a href="locations.html" data-i18n="cta.allLocations">Bütün filiallar</a>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.hours">İş saatları</h4>
@@ -135,6 +143,8 @@
 <!-- /@partial:footer -->
 
 <script defer src="js/main.js"></script>
+<script defer src="data/stores-data.js"></script>
+<script defer src="js/geo.js"></script>
 <script defer src="data/menu-data.js"></script>
 <script defer src="js/menu.js"></script>
 </body>

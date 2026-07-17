@@ -136,6 +136,12 @@ body[data-page="menu"] .menu-noscript {
   border-radius: var(--r-md); margin-block: var(--sp-8);
 }
 
+/* Nearest-branch banner (menu page) */
+.loc-banner { background: var(--c-char); color: var(--c-cream); }
+.loc-banner-inner { display: flex; align-items: center; gap: var(--sp-3); padding-block: var(--sp-3); font-size: var(--fs-300); }
+.loc-banner-inner svg { flex: 0 0 auto; color: var(--c-cream); }
+.loc-banner strong { font-family: var(--font-display); letter-spacing: .01em; }
+
 /* ============================================================
    Locations page
    ============================================================ */
