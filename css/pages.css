@@ -131,6 +131,12 @@ body[data-page="menu"] .cat-head {
 }
 body[data-page="menu"] .cat-head .cat-index { color: var(--c-flame-deep); font-size: .6em; letter-spacing: .06em; }
 body[data-page="menu"] .menu-item .tag-row { display: flex; flex-wrap: wrap; gap: var(--sp-1); }
+/* Menu cards: one column on phones (roomy — price + order button always fit on
+   one line), scaling up with width. */
+body[data-page="menu"] .product-grid { grid-template-columns: 1fr; }
+@media (min-width: 560px)  { body[data-page="menu"] .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px)  { body[data-page="menu"] .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1160px) { body[data-page="menu"] .product-grid { grid-template-columns: repeat(4, 1fr); } }
 body[data-page="menu"] .menu-noscript {
   padding: var(--sp-4); background: var(--c-paper); border: 1px solid var(--c-line);
   border-radius: var(--r-md); margin-block: var(--sp-8);
