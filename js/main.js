@@ -28,17 +28,13 @@
       lastFocus = document.activeElement;
       drawer.classList.add("is-open"); scrim.classList.add("is-open");
       document.body.classList.add("nav-open");
-      toggle.setAttribute("aria-expanded", "true");
-      if (openIcon) openIcon.style.display = "none";
-      if (closeIcon) closeIcon.style.display = "block";
+      toggle.setAttribute("aria-expanded", "true"); // CSS animates the icon off this
       var f = focusables(); if (f.length) f[0].focus();
     }
     function close() {
       drawer.classList.remove("is-open"); scrim.classList.remove("is-open");
       document.body.classList.remove("nav-open");
       toggle.setAttribute("aria-expanded", "false");
-      if (openIcon) openIcon.style.display = "block";
-      if (closeIcon) closeIcon.style.display = "none";
       if (lastFocus) lastFocus.focus();
     }
     function isOpen() { return drawer.classList.contains("is-open"); }

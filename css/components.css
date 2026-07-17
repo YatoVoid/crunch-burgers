@@ -25,7 +25,7 @@
 
 /* — Header — */
 .site-header {
-  position: sticky; top: 0; z-index: 100;
+  position: sticky; top: 0; z-index: 140; /* above the drawer (130) so the toggle stays on top */
   background: var(--c-char); color: var(--c-cream);
   transition: box-shadow var(--t-med) var(--ease-out);
 }
@@ -66,11 +66,15 @@
 
 /* — Hamburger — */
 .nav-toggle {
-  display: inline-flex; align-items: center; justify-content: center;
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
   width: 44px; height: 44px; border-radius: var(--r-sm); color: var(--c-cream);
 }
-.nav-toggle svg { width: 26px; height: 26px; }
-.nav-toggle .icon-close { display: none; }
+/* Stack the two icons and cross-fade/rotate between them on toggle. */
+.nav-toggle svg { position: absolute; width: 26px; height: 26px; transition: opacity var(--t-fast) var(--ease-out), transform var(--t-med) var(--ease-out); }
+.nav-toggle .icon-open { opacity: 1; transform: rotate(0) scale(1); }
+.nav-toggle .icon-close { opacity: 0; transform: rotate(-90deg) scale(.6); }
+.nav-toggle[aria-expanded="true"] .icon-open { opacity: 0; transform: rotate(90deg) scale(.6); }
+.nav-toggle[aria-expanded="true"] .icon-close { opacity: 1; transform: rotate(0) scale(1); }
 
 /* — Drawer — */
 .drawer {
