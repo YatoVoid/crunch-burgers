@@ -89,7 +89,7 @@ p { text-wrap: pretty; overflow-wrap: anywhere; }
 
 /* — Reveal on scroll (only hidden when JS is active) — */
 html.js .reveal { opacity: 0; transform: translateY(16px); }
-.reveal.is-visible {
+html.js .reveal.is-visible {
   opacity: 1; transform: none;
   transition: opacity var(--t-slow) var(--ease-out), transform var(--t-slow) var(--ease-out);
 }

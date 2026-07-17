@@ -8,9 +8,9 @@
   min-height: calc(100svh - var(--header-h)); display: flex; align-items: center;
   overflow: hidden;
 }
-.hero::before {              /* flame glow */
+.hero::before {              /* soft light glow */
   content: ""; position: absolute; inset: auto -20% -30% 30%; width: 70%; height: 80%;
-  background: radial-gradient(closest-side, rgb(255 77 20 / .35), transparent 70%);
+  background: radial-gradient(closest-side, rgb(255 255 255 / .10), transparent 70%);
   filter: blur(20px); pointer-events: none;
 }
 .hero-grid {
@@ -18,14 +18,14 @@
   grid-template-columns: 1fr; padding-block: var(--sp-12);
 }
 .hero-copy h1 { margin: var(--sp-3) 0; }
-.hero-copy h1 .flame { color: var(--c-flame); }
+.hero-copy h1 .flame { color: var(--c-cream); }
 .hero-cta { display: flex; flex-wrap: wrap; gap: var(--sp-3); margin-top: var(--sp-6); }
 .hero-cta .btn { flex: 1 1 auto; }
 .hero-media { position: relative; }
 .hero-media img { width: 100%; border-radius: var(--r-lg); }
 .hero-stats { display: flex; gap: var(--sp-6); margin-top: var(--sp-8); flex-wrap: wrap; }
 .hero-stats .stat b { font-family: var(--font-display); font-size: var(--fs-700); color: var(--c-mustard); display: block; }
-.hero-stats .stat span { font-size: var(--fs-200); letter-spacing: .1em; text-transform: uppercase; color: #b6ab99; }
+.hero-stats .stat span { font-size: var(--fs-200); letter-spacing: .1em; text-transform: uppercase; color: #A6A6A6; }
 
 @media (min-width: 900px) {
   .hero-grid { grid-template-columns: 1.05fr .95fr; gap: var(--sp-12); }
@@ -34,7 +34,7 @@
 
 /* — Marquee promo — */
 .marquee {
-  background: var(--c-mustard); color: var(--c-char); overflow: hidden;
+  background: var(--c-char); color: var(--c-cream); overflow: hidden;
   padding-block: var(--sp-3); border-block: 3px solid var(--c-char);
 }
 .marquee-track {
@@ -42,7 +42,7 @@
   animation: marquee 22s linear infinite;
 }
 .marquee span { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: var(--fs-600); letter-spacing: .04em; }
-.marquee span::after { content: "•"; margin-left: var(--sp-6); color: var(--c-flame-deep); }
+.marquee span::after { content: "•"; margin-left: var(--sp-6); color: var(--c-cream); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
 

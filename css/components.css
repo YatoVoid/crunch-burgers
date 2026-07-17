@@ -117,10 +117,10 @@ body.nav-open { overflow: hidden; }
 .badge {
   display: inline-block; font-family: var(--font-display); font-weight: 600;
   font-size: var(--fs-200); letter-spacing: .04em; text-transform: uppercase;
-  background: var(--c-mustard); color: var(--c-char); padding: .2rem .5rem; border-radius: var(--r-sm);
+  background: var(--c-char); color: var(--c-white); padding: .2rem .5rem; border-radius: var(--r-sm);
 }
 .badge--veg { background: var(--c-lettuce); color: #fff; }
-.badge--hot { background: var(--c-flame); color: #fff; }
+.badge--hot { background: var(--c-char); color: #fff; }
 
 /* stretched link (whole card tappable) */
 .stretch { position: static; }

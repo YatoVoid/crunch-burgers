@@ -1,20 +1,21 @@
 /* ============================================================
-   CRUNCH — Design tokens ("CHAR & FLAME")
+   CRUNCH — Design tokens (black & white brand)
    Single source of truth. Everything else consumes these.
+   Var names kept for compatibility; values are monochrome.
    ============================================================ */
 :root {
   /* — Color — */
-  --c-char: #1B140F;        /* dark sections, primary text on light */
-  --c-smoke: #3B322B;       /* secondary text on light */
-  --c-cream: #FAF4EA;       /* page background */
-  --c-paper: #F1E6D4;       /* card / alt-section background */
-  --c-line: #E2D5BF;        /* hairlines */
-  --c-flame: #FF4D14;       /* bright accent: large/graphic only */
-  --c-flame-deep: #C43A05;  /* flame as text on cream / button bg */
-  --c-mustard: #FFB800;     /* badges, price highlights */
-  --c-lettuce: #2E7D32;     /* "open now" status only */
+  --c-char: #0E0E0E;        /* black: dark sections, primary text on light */
+  --c-smoke: #565656;       /* secondary text on light */
+  --c-cream: #FFFFFF;       /* page background (white) */
+  --c-paper: #F4F4F4;       /* card / alt-section background */
+  --c-line: #E6E6E6;        /* hairlines */
+  --c-flame: #111111;       /* accent (black) */
+  --c-flame-deep: #000000;  /* button bg / accent text on light */
+  --c-mustard: #FFFFFF;     /* light accent used on dark sections */
+  --c-lettuce: #1E7D32;     /* "open now" status only */
   --c-white: #FFFFFF;
-  --c-char-80: rgb(27 20 15 / .8);
+  --c-char-80: rgb(14 14 14 / .8);
 
   /* — Type — */
   --font-display: "Oswald", "Arial Narrow", "Segoe UI", sans-serif;
@@ -36,10 +37,10 @@
   /* — Radius — */
   --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-full: 999px;
 
-  /* — Shadow (warm-tinted, never gray) — */
-  --shadow-1: 0 1px 3px rgb(27 20 15 / .08);
-  --shadow-2: 0 6px 20px rgb(27 20 15 / .12);
-  --shadow-3: 0 16px 44px rgb(27 20 15 / .18);
+  /* — Shadow (neutral) — */
+  --shadow-1: 0 1px 3px rgb(0 0 0 / .08);
+  --shadow-2: 0 6px 20px rgb(0 0 0 / .12);
+  --shadow-3: 0 16px 44px rgb(0 0 0 / .18);
 
   /* — Motion — */
   --ease-out: cubic-bezier(.22, 1, .36, 1);
