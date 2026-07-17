@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
 <script defer src="data/strings.js"></script>
 <script defer src="js/i18n.js"></script>
 </head>
@@ -77,14 +78,7 @@
   <!-- Map + store cards -->
   <section class="section" aria-label="Filiallar">
     <div class="container loc-layout">
-      <div class="map-embed">
-        <iframe
-          src="https://www.openstreetmap.org/export/embed.html?bbox=49.7800%2C40.3300%2C49.9200%2C40.4300&amp;layer=mapnik&amp;marker=40.3796%2C49.8474"
-          loading="lazy"
-          title="CRUNCH filialları xəritəsi — Bakı"
-          data-i18n-attr="title:loc.mapTitle"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      <div id="map" class="map-embed" role="img" aria-label="CRUNCH filialları xəritəsi — Bakı" data-i18n-attr="aria-label:loc.mapTitle"></div>
       <div>
         <h2 data-i18n="loc.listTitle" style="margin-bottom:var(--sp-6)">Filiallarımız</h2>
         <noscript>
@@ -140,6 +134,7 @@
 <!-- /@partial:footer -->
 
 <script defer src="js/main.js"></script>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script defer src="data/stores-data.js"></script>
 <script defer src="js/locations.js"></script>
 </body>

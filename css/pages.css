@@ -144,9 +144,16 @@ body[data-page="locations"] .map-embed {
   position: relative; aspect-ratio: 4 / 3; border-radius: var(--r-lg);
   overflow: hidden; box-shadow: var(--shadow-2); background: var(--c-paper);
 }
-body[data-page="locations"] .map-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+body[data-page="locations"] .map-embed iframe,
+body[data-page="locations"] .map-embed .leaflet-container { width: 100%; height: 100%; border: 0; display: block; background: var(--c-paper); }
 body[data-page="locations"] .stores-list { display: grid; gap: var(--sp-4); }
-body[data-page="locations"] .store-card:hover { transform: none; }
+body[data-page="locations"] .store-card { cursor: pointer; transition: box-shadow var(--t-fast) var(--ease-out), transform var(--t-fast) var(--ease-out); }
+body[data-page="locations"] .store-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); }
+body[data-page="locations"] .store-card.is-active { box-shadow: 0 0 0 2px var(--c-char), var(--shadow-2); }
+body[data-page="locations"] .store-card.is-nearest { box-shadow: 0 0 0 2px var(--c-lettuce); }
+body[data-page="locations"] .store-nearest { font-family: var(--font-display); font-size: var(--fs-200); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--c-lettuce); margin-bottom: var(--sp-1); }
+/* Brand map pin */
+.crunch-pin span { display: block; width: 20px; height: 20px; background: var(--c-char); border: 3px solid #fff; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); box-shadow: var(--shadow-2); }
 body[data-page="locations"] .store-top { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-2); flex-wrap: wrap; }
 body[data-page="locations"] .store-hours { margin-top: calc(var(--sp-1) * -1); }
 body[data-page="locations"] .store-status { font-size: var(--fs-300); font-weight: 700; color: var(--c-smoke); }

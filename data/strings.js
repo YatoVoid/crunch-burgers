@@ -52,7 +52,7 @@ window.I18N = {
     "loc.listTitle": "Filiallarımız",
     "loc.openNow": "İndi açıqdır", "loc.closed": "Bağlıdır",
     "loc.opensAt": "Açılır: {time}", "loc.closesAt": "Bağlanır: {time}",
-    "loc.directions": "Yol tarifi",
+    "loc.directions": "Yol tarifi", "loc.nearest": "Sənə ən yaxın",
     "loc.noscript": "Canlı filial statusu üçün JavaScript tələb olunur.",
 
     "merch.hero.eyebrow": "Merç", "merch.hero.title": "CRUNCH-u əynində gəzdir",
@@ -147,7 +147,7 @@ window.I18N = {
     "loc.listTitle": "Our stores",
     "loc.openNow": "Open now", "loc.closed": "Closed",
     "loc.opensAt": "Opens at {time}", "loc.closesAt": "Closes at {time}",
-    "loc.directions": "Directions",
+    "loc.directions": "Directions", "loc.nearest": "Closest to you",
     "loc.noscript": "Live store status requires JavaScript.",
 
     "merch.hero.eyebrow": "Merch", "merch.hero.title": "Wear the CRUNCH",
@@ -242,7 +242,7 @@ window.I18N = {
     "loc.listTitle": "Наши точки",
     "loc.openNow": "Открыто", "loc.closed": "Закрыто",
     "loc.opensAt": "Откроется в {time}", "loc.closesAt": "Закроется в {time}",
-    "loc.directions": "Маршрут",
+    "loc.directions": "Маршрут", "loc.nearest": "Ближайший к вам",
     "loc.noscript": "Для живого статуса точек требуется JavaScript.",
 
     "merch.hero.eyebrow": "Мерч", "merch.hero.title": "Носи CRUNCH",
