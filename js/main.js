@@ -59,18 +59,35 @@
   }
 
   /* — Reveal on scroll — */
-  var reveals = document.querySelectorAll(".reveal");
-  if (reveals.length && "IntersectionObserver" in window) {
+  var reveals = [].slice.call(document.querySelectorAll(".reveal"));
+  reveals.forEach(function (el, i) { el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + "ms"; });
+
+  // Reveal anything whose top has reached the lower part of the viewport.
+  // This runs on scroll/resize/load as a hard guarantee: a section can never
+  // stay hidden once it's scrolled into view (IntersectionObserver alone can
+  // miss fast mobile scrolls or elements shifted horizontally in a carousel).
+  function showInView() {
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    for (var i = reveals.length - 1; i >= 0; i--) {
+      var el = reveals[i];
+      if (el.getBoundingClientRect().top < vh * 0.9) {
+        el.classList.add("is-visible");
+        reveals.splice(i, 1); // done — stop tracking it
+      }
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add("is-visible"); io.unobserve(en.target); }
       });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.01 });
-    reveals.forEach(function (el, i) {
-      el.style.transitionDelay = (Math.min(i % 4, 3) * 60) + "ms";
-      io.observe(el);
-    });
-  } else {
-    reveals.forEach(function (el) { el.classList.add("is-visible"); });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: 0 });
+    reveals.forEach(function (el) { io.observe(el); });
   }
+
+  showInView();
+  window.addEventListener("scroll", showInView, { passive: true });
+  window.addEventListener("resize", showInView);
+  window.addEventListener("load", showInView);
 })();
