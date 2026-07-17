@@ -9,7 +9,7 @@ window.I18N = {
     "nav.menu": "Menyu", "nav.locations": "Filiallar", "nav.merch": "Merç",
     "nav.app": "Tətbiq", "nav.about": "Haqqımızda", "nav.contact": "Əlaqə",
     "nav.open": "Menyunu aç", "nav.close": "Bağla",
-    "cta.order": "Sifariş et", "cta.viewMenu": "Menyuya bax", "cta.allLocations": "Bütün filiallar",
+    "cta.order": "Sifariş et", "common.comingSoon": "Tezliklə", "cta.viewMenu": "Menyuya bax", "cta.allLocations": "Bütün filiallar",
 
     "home.hero.eyebrow": "Bakı · Əl ilə əzilmiş",
     "home.hero.title": "Əsl", "home.hero.titleFlame": "CRUNCH",
@@ -104,7 +104,7 @@ window.I18N = {
     "nav.menu": "Menu", "nav.locations": "Locations", "nav.merch": "Merch",
     "nav.app": "App", "nav.about": "About", "nav.contact": "Contact",
     "nav.open": "Open menu", "nav.close": "Close",
-    "cta.order": "Order now", "cta.viewMenu": "View menu", "cta.allLocations": "All locations",
+    "cta.order": "Order now", "common.comingSoon": "Coming soon", "cta.viewMenu": "View menu", "cta.allLocations": "All locations",
 
     "home.hero.eyebrow": "Baku · Hand-smashed",
     "home.hero.title": "The real", "home.hero.titleFlame": "CRUNCH",
@@ -199,7 +199,7 @@ window.I18N = {
     "nav.menu": "Меню", "nav.locations": "Адреса", "nav.merch": "Мерч",
     "nav.app": "Приложение", "nav.about": "О нас", "nav.contact": "Контакты",
     "nav.open": "Открыть меню", "nav.close": "Закрыть",
-    "cta.order": "Заказать", "cta.viewMenu": "Смотреть меню", "cta.allLocations": "Все адреса",
+    "cta.order": "Заказать", "common.comingSoon": "Скоро", "cta.viewMenu": "Смотреть меню", "cta.allLocations": "Все адреса",
 
     "home.hero.eyebrow": "Баку · Ручная обжарка",
     "home.hero.title": "Настоящий", "home.hero.titleFlame": "CRUNCH",

@@ -90,4 +90,32 @@
   window.addEventListener("scroll", showInView, { passive: true });
   window.addEventListener("resize", showInView);
   window.addEventListener("load", showInView);
+
+  /* — "Coming soon" toast for not-yet-live buttons (app store links) — */
+  var comingSoon = document.querySelectorAll("[data-coming-soon]");
+  if (comingSoon.length) {
+    var toast, hideTimer;
+    function msg() {
+      var l = window.CRUNCH_I18N ? window.CRUNCH_I18N.get() : "az";
+      var table = (window.I18N || {})[l] || {};
+      return table["common.comingSoon"] || "Coming soon";
+    }
+    function showToast() {
+      if (!toast) {
+        toast = document.createElement("div");
+        toast.className = "toast";
+        toast.setAttribute("role", "status");
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg();
+      // reflow so the transition replays on repeat clicks
+      void toast.offsetWidth;
+      toast.classList.add("is-visible");
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(function () { toast.classList.remove("is-visible"); }, 2400);
+    }
+    comingSoon.forEach(function (el) {
+      el.addEventListener("click", function (e) { e.preventDefault(); showToast(); });
+    });
+  }
 })();

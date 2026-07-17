@@ -23,6 +23,19 @@
 .btn--sm { padding: .6rem 1rem; min-height: 40px; font-size: var(--fs-300); }
 .btn--block { width: 100%; }
 
+/* — Toast ("coming soon") — */
+.toast {
+  position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + var(--sp-8));
+  transform: translate(-50%, 1rem); z-index: 1500;
+  background: var(--c-char); color: var(--c-cream);
+  font-family: var(--font-display); font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+  font-size: var(--fs-400); padding: var(--sp-3) var(--sp-6); border-radius: var(--r-full);
+  box-shadow: var(--shadow-3); border: 1.5px solid rgb(255 255 255 / .15);
+  opacity: 0; visibility: hidden; pointer-events: none; max-width: calc(100vw - 2rem); text-align: center;
+  transition: opacity var(--t-med) var(--ease-out), transform var(--t-med) var(--ease-out), visibility var(--t-med);
+}
+.toast.is-visible { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+
 /* — Header — */
 .site-header {
   position: sticky; top: 0; z-index: 140; /* above the drawer (130) so the toggle stays on top */
