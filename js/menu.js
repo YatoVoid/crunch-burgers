@@ -62,10 +62,10 @@
         var media = document.createElement("div");
         media.className = "media";
         var img = document.createElement("img");
-        img.src = "assets/img/hero/burger.svg";
+        img.src = item.img || "assets/img/hero/burger.svg";
         img.alt = item.name[l] || item.name.az;
         img.loading = "lazy";
-        img.width = 400; img.height = 400;
+        img.width = 400; img.height = 225;
         media.appendChild(img);
         card.appendChild(media);
 
@@ -76,10 +76,13 @@
         h3.textContent = item.name[l] || item.name.az;
         body.appendChild(h3);
 
-        var desc = document.createElement("p");
-        desc.className = "desc";
-        desc.textContent = item.desc[l] || item.desc.az;
-        body.appendChild(desc);
+        var descText = item.desc ? (item.desc[l] || item.desc.az) : "";
+        if (descText) {
+          var desc = document.createElement("p");
+          desc.className = "desc";
+          desc.textContent = descText;
+          body.appendChild(desc);
+        }
 
         if (item.tags && item.tags.length) {
           var tagRow = document.createElement("div");

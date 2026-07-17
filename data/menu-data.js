@@ -1,5 +1,8 @@
 /* ============================================================
-   CRUNCH — Menu data (placeholder items, swap for real menu)
+   CRUNCH — Menu data. Items, photos and prices taken from the
+   live Wolt menu (wolt.com/az/aze/baku/restaurant/crunch-burger).
+   NOTE: prices below are Wolt DELIVERY prices and can run ~15-20%
+   above dine-in. Confirm the owner's in-store prices before launch.
    Rendered by js/menu.js in the active language.
    Category `key` drives the anchor id: id="cat-<key>".
    ============================================================ */
@@ -9,44 +12,34 @@ window.MENU = [
     name: { az: "Burgerlər", en: "Burgers", ru: "Бургеры" },
     items: [
       {
-        id: "double-smash",
-        name: { az: "Double Smash", en: "Double Smash", ru: "Дабл Смэш" },
+        id: "crunch",
+        name: { az: "Crunch", en: "Crunch", ru: "Crunch" },
         desc: {
-          az: "2× əzilmiş köftə, ikiqat cheddar, turşu, CRUNCH sousu.",
-          en: "2× smashed patties, double cheddar, pickles, CRUNCH sauce.",
-          ru: "2× котлеты смэш, двойной чеддер, огурчики, соус CRUNCH."
+          az: "İkiqat smash köftə, cheddar, bulka, turşu, karamelizə soğan, crunch sousu.",
+          en: "Double smash patty, cheddar, bun, pickles, caramelized onion, crunch sauce.",
+          ru: "Двойная котлета смэш, чеддер, булочка, огурчики, карамелизованный лук, соус crunch."
         },
-        price: "12.90 ₼", tags: ["best"]
+        price: "13.50 ₼", img: "assets/img/menu/crunch.jpg", tags: ["best"]
       },
       {
-        id: "classic-cheese",
-        name: { az: "Classic Cheese", en: "Classic Cheese", ru: "Классик Чиз" },
+        id: "truffle",
+        name: { az: "Truffle", en: "Truffle", ru: "Truffle" },
         desc: {
-          az: "Əzilmiş köftə, cheddar, soğan, turşu, ev sousu.",
-          en: "Smashed patty, cheddar, onion, pickles, house sauce.",
-          ru: "Котлета смэш, чеддер, лук, огурчики, фирменный соус."
+          az: "İkiqat smash köftə, cheddar, bulka, karamelizə soğan, trüf sousu.",
+          en: "Double smash patty, cheddar, bun, caramelized onion, truffle sauce.",
+          ru: "Двойная котлета смэш, чеддер, булочка, карамелизованный лук, трюфельный соус."
         },
-        price: "8.90 ₼", tags: []
+        price: "17.50 ₼", img: "assets/img/menu/truffle.jpg", tags: []
       },
       {
-        id: "truffle-shroom",
-        name: { az: "Truffle Shroom", en: "Truffle Shroom", ru: "Трюфель Грибной" },
+        id: "jalapeno",
+        name: { az: "Jalapeño", en: "Jalapeño", ru: "Jalapeño" },
         desc: {
-          az: "Köftə, qızardılmış göbələk, trüf mayonezi, isveçrə pendiri.",
-          en: "Patty, sautéed mushrooms, truffle mayo, Swiss cheese.",
-          ru: "Котлета, жареные грибы, трюфельный майонез, швейцарский сыр."
+          az: "İkiqat smash köftə, cheddar, bulka, turşu, karamelizə soğan, krem pendir sousu, mal bekon cemi, halapenyo.",
+          en: "Double smash patty, cheddar, bun, pickles, caramelized onion, cream cheese sauce, beef bacon jam, jalapeño.",
+          ru: "Двойная котлета смэш, чеддер, булочка, огурчики, карамелизованный лук, сливочный соус, джем из говяжьего бекона, халапеньо."
         },
-        price: "13.90 ₼", tags: ["new"]
-      },
-      {
-        id: "fire-smash",
-        name: { az: "Fire Smash", en: "Fire Smash", ru: "Файр Смэш" },
-        desc: {
-          az: "Köftə, halapenyo, acı sous, əridilmiş cheddar.",
-          en: "Patty, jalapeños, fire sauce, melted cheddar.",
-          ru: "Котлета, халапеньо, острый соус, плавленый чеддер."
-        },
-        price: "11.90 ₼", tags: ["hot"]
+        price: "16.50 ₼", img: "assets/img/menu/jalape-o.jpg", tags: ["hot"]
       }
     ]
   },
@@ -55,228 +48,290 @@ window.MENU = [
     name: { az: "Toyuq", en: "Chicken", ru: "Курица" },
     items: [
       {
-        id: "crispy-chick",
-        name: { az: "Crispy Chick", en: "Crispy Chick", ru: "Криспи Чик" },
+        id: "crunchy-canes",
+        name: { az: "Crunchy Canes", en: "Crunchy Canes", ru: "Crunchy Canes" },
         desc: {
-          az: "Xırtıldayan toyuq filesi, kələm salatı, sarımsaq sousu.",
-          en: "Crispy chicken fillet, slaw, garlic mayo.",
-          ru: "Хрустящее куриное филе, капустный салат, чесночный соус."
+          az: "Toyuq tenderləri, kartof fri, Texas tost, xüsusi crunch sousu.",
+          en: "Chicken tenders, fries, Texas toast, special crunch sauce.",
+          ru: "Куриные тендеры, картофель фри, тост по-техасски, специальный соус crunch."
         },
-        price: "10.50 ₼", tags: []
+        price: "19.50 ₼", img: "assets/img/menu/crunchy-canes.jpg", tags: ["best"]
       },
       {
-        id: "spicy-chick",
-        name: { az: "Spicy Chick", en: "Spicy Chick", ru: "Спайси Чик" },
+        id: "chicken-tenders",
+        name: { az: "Chicken Tenders", en: "Chicken Tenders", ru: "Chicken Tenders" },
         desc: {
-          az: "Acılı suxarıda toyuq, turşu, sərinlədici ranch sousu.",
-          en: "Hot-breaded chicken, pickles, cooling ranch.",
-          ru: "Курица в острой панировке, огурчики, охлаждающий ранч."
+          az: "Bütöv toyuq zolaqları, un qarışığında qızardılır.",
+          en: "Whole chicken strips fried in our flour mix.",
+          ru: "Куриные стрипсы из цельного филе в фирменной панировке."
         },
-        price: "10.90 ₼", tags: ["hot"]
+        price: "8.00 ₼", img: "assets/img/menu/chicken-tenders.jpg", tags: ["best"]
       },
       {
-        id: "tenders-5",
-        name: { az: "Tenders (5 ədəd)", en: "Tenders (5 pc)", ru: "Тендеры (5 шт)" },
+        id: "nashville-tenders",
+        name: { az: "Nashville Tenders", en: "Nashville Tenders", ru: "Nashville Tenders" },
         desc: {
-          az: "Beş xırtıldayan toyuq zolağı, seçdiyin sousla.",
-          en: "Five crunchy chicken strips with a dip of your choice.",
-          ru: "Пять хрустящих куриных стрипсов с соусом на выбор."
+          az: "Xırtıldayan tenderlər, Nashville tərzi acı ədviyyat, bal ilə.",
+          en: "Crispy tenders, Nashville-style hot seasoning, served with honey.",
+          ru: "Хрустящие тендеры, острая нэшвиллская приправа, с мёдом."
         },
-        price: "9.50 ₼", tags: []
+        price: "9.00 ₼", img: "assets/img/menu/nashville-tenders.jpg", tags: ["hot"]
       },
       {
-        id: "honey-chick",
-        name: { az: "Honey Mustard Chick", en: "Honey Mustard Chick", ru: "Хани Мастард Чик" },
+        id: "chicken-sandwich",
+        name: { az: "Chicken Sandwich", en: "Chicken Sandwich", ru: "Chicken Sandwich" },
         desc: {
-          az: "Xırtıldayan toyuq, bal-xardal sousu, qıtqırt kahı.",
-          en: "Crispy chicken, honey-mustard glaze, crisp lettuce.",
-          ru: "Хрустящая курица, медово-горчичный соус, свежий салат."
+          az: "Toyuq tenderləri, bulka, kokteyl sousu, cheddar, turşu, kahı.",
+          en: "Chicken tenders, bun, cocktail sauce, cheddar, pickles, lettuce.",
+          ru: "Куриные тендеры, булочка, коктейльный соус, чеддер, огурчики, салат."
         },
-        price: "11.50 ₼", tags: ["new"]
+        price: "13.00 ₼", img: "assets/img/menu/chicken-sandwich.jpg", tags: []
+      },
+      {
+        id: "nashville-chicken-sandwich",
+        name: { az: "Nashville Chicken Sandwich", en: "Nashville Chicken Sandwich", ru: "Nashville Chicken Sandwich" },
+        desc: {
+          az: "Toyuq tenderləri, bulka, bal, turşu, crunch sousu.",
+          en: "Chicken tenders, bun, honey, pickles, crunch sauce.",
+          ru: "Куриные тендеры, булочка, мёд, огурчики, соус crunch."
+        },
+        price: "13.50 ₼", img: "assets/img/menu/nashville-chicken-sandwich.jpg", tags: ["hot"]
       }
     ]
   },
   {
     category: "sides",
-    name: { az: "Qəlyanaltılar", en: "Sides", ru: "Закуски" },
+    name: { az: "Kartof və Qəlyanaltılar", en: "Fries & Sides", ru: "Картофель и закуски" },
     items: [
       {
-        id: "crinkle-fries",
-        name: { az: "Crinkle Fries", en: "Crinkle Fries", ru: "Картофель Кринкл" },
+        id: "fries",
+        name: { az: "Fries", en: "Fries", ru: "Fries" },
         desc: {
-          az: "Qızıl sarısı, dalğalı kartof, dəniz duzu ilə.",
-          en: "Golden crinkle-cut fries with sea salt.",
-          ru: "Золотистый рифлёный картофель с морской солью."
+          az: "Dəniz duzu ilə qızılı kartof fri.",
+          en: "Golden fries with sea salt.",
+          ru: "Золотистый картофель фри с морской солью."
         },
-        price: "4.50 ₼", tags: []
+        price: "6.50 ₼", img: "assets/img/menu/fries.jpg", tags: ["best"]
       },
       {
-        id: "loaded-fries",
-        name: { az: "Loaded Fries", en: "Loaded Fries", ru: "Лоудед Фрайс" },
+        id: "sweet-potato",
+        name: { az: "Sweet Potato", en: "Sweet Potato", ru: "Sweet Potato" },
         desc: {
-          az: "Kartof, əridilmiş pendir sousu, halapenyo, yaşıl soğan.",
-          en: "Fries, melted cheese sauce, jalapeños, spring onion.",
-          ru: "Картофель, сырный соус, халапеньо, зелёный лук."
+          az: "Şirin kartofdan hazırlanan fri.",
+          en: "Sweet potato fries.",
+          ru: "Картофель фри из батата."
         },
-        price: "6.50 ₼", tags: ["best"]
+        price: "8.50 ₼", img: "assets/img/menu/sweet-potato.jpg", tags: []
       },
       {
-        id: "onion-rings",
-        name: { az: "Onion Rings", en: "Onion Rings", ru: "Луковые кольца" },
+        id: "parmesan-truffle",
+        name: { az: "Parmesan Truffle", en: "Parmesan Truffle", ru: "Parmesan Truffle" },
         desc: {
-          az: "Qalın suxarıda soğan halqaları, BBQ sousu ilə.",
-          en: "Thick-battered onion rings with BBQ dip.",
-          ru: "Луковые кольца в панировке с соусом барбекю."
+          az: "Parmezan və trüf ilə kartof fri.",
+          en: "Fries with parmesan and truffle.",
+          ru: "Картофель фри с пармезаном и трюфелем."
         },
-        price: "5.50 ₼", tags: []
+        price: "11.00 ₼", img: "assets/img/menu/parmesan-truffle.jpg", tags: []
       },
       {
-        id: "coleslaw",
-        name: { az: "Kələm salatı", en: "Coleslaw", ru: "Коул-слоу" },
+        id: "crunch-style",
+        name: { az: "Crunch Style", en: "Crunch Style", ru: "Crunch Style" },
         desc: {
-          az: "Təzə kələm, yerkökü, yüngül kremli sous.",
-          en: "Fresh cabbage, carrot, light creamy dressing.",
-          ru: "Свежая капуста, морковь, лёгкая сливочная заправка."
+          az: "CRUNCH üslubunda zəngin kartof fri.",
+          en: "Loaded fries, CRUNCH style.",
+          ru: "Картофель фри по-фирменному, в стиле CRUNCH."
         },
-        price: "3.90 ₼", tags: ["veg"]
-      }
-    ]
-  },
-  {
-    category: "sauces",
-    name: { az: "Souslar", en: "Sauces", ru: "Соусы" },
-    items: [
+        price: "10.50 ₼", img: "assets/img/menu/crunch-style.jpg", tags: []
+      },
       {
         id: "crunch-sauce",
-        name: { az: "CRUNCH sousu", en: "CRUNCH Sauce", ru: "Соус CRUNCH" },
+        name: { az: "Crunch Sauce", en: "Crunch Sauce", ru: "Crunch Sauce" },
         desc: {
-          az: "İmza sousumuz — sirri mətbəxdə qalır.",
-          en: "Our signature sauce — the secret stays in the kitchen.",
-          ru: "Наш фирменный соус — секрет остаётся на кухне."
+          az: "İmza sousumuz, 60 ml.",
+          en: "Our signature sauce, 60 ml.",
+          ru: "Наш фирменный соус, 60 мл."
         },
-        price: "1.50 ₼", tags: ["best"]
-      },
-      {
-        id: "garlic-mayo",
-        name: { az: "Sarımsaq mayonezi", en: "Garlic Mayo", ru: "Чесночный майонез" },
-        desc: {
-          az: "Qovrulmuş sarımsaqla kremli mayonez.",
-          en: "Creamy mayo with roasted garlic.",
-          ru: "Сливочный майонез с запечённым чесноком."
-        },
-        price: "1.50 ₼", tags: []
-      },
-      {
-        id: "smoky-bbq",
-        name: { az: "Hisə verilmiş BBQ", en: "Smoky BBQ", ru: "Копчёный BBQ" },
-        desc: {
-          az: "Tünd, şirin-hisli barbekü sousu.",
-          en: "Deep, sweet-smoky barbecue sauce.",
-          ru: "Насыщенный сладко-копчёный соус барбекю."
-        },
-        price: "1.50 ₼", tags: []
-      },
-      {
-        id: "fire-sauce",
-        name: { az: "Fire sousu", en: "Fire Sauce", ru: "Соус Файр" },
-        desc: {
-          az: "Cəsurlar üçün — fermentləşdirilmiş istiot sousu.",
-          en: "For the brave — fermented chilli heat.",
-          ru: "Для смелых — ферментированный перечный соус."
-        },
-        price: "1.50 ₼", tags: ["hot"]
+        price: "1.50 ₼", img: "assets/img/menu/crunch-sauce.jpg", tags: ["best"]
       }
     ]
   },
   {
-    category: "drinks",
-    name: { az: "İçkilər", en: "Drinks", ru: "Напитки" },
+    category: "pairings",
+    name: { az: "Setlər", en: "Pairings", ru: "Комбо" },
     items: [
       {
-        id: "cola",
-        name: { az: "Kola 0.33", en: "Cola 0.33", ru: "Кола 0.33" },
+        id: "crispy-pairing",
+        name: { az: "Crispy Pairing", en: "Crispy Pairing", ru: "Crispy Pairing" },
         desc: {
-          az: "Buz kimi soyuq, şüşə qabda.",
-          en: "Ice cold, in a glass bottle.",
-          ru: "Ледяная, в стеклянной бутылке."
+          az: "Chicken Sandwich, kartof fri və 0.5L içki.",
+          en: "Chicken sandwich, fries and a 0.5L drink.",
+          ru: "Куриный сэндвич, картофель фри и напиток 0.5 л."
         },
-        price: "2.50 ₼", tags: []
+        price: "21.00 ₼", img: "assets/img/menu/crispy-pairing.jpg", tags: []
       },
       {
-        id: "lemonade",
-        name: { az: "Ev limonadı", en: "House Lemonade", ru: "Домашний лимонад" },
+        id: "crunch-pairing",
+        name: { az: "Crunch Pairing", en: "Crunch Pairing", ru: "Crunch Pairing" },
         desc: {
-          az: "Hər gün təzə sıxılır — limon, nanə, az şəkər.",
-          en: "Pressed fresh daily — lemon, mint, light sugar.",
-          ru: "Свежевыжатый каждый день — лимон, мята, немного сахара."
+          az: "Crunch burger, Crunch Style kartof fri və 0.5L içki.",
+          en: "Crunch burger, Crunch Style fries and a 0.5L drink.",
+          ru: "Бургер Crunch, картофель Crunch Style и напиток 0.5 л."
         },
-        price: "4.50 ₼", tags: ["new"]
+        price: "23.00 ₼", img: "assets/img/menu/crunch-pairing.jpg", tags: ["best"]
       },
       {
-        id: "ayran",
-        name: { az: "Ayran", en: "Ayran", ru: "Айран" },
+        id: "truffle-pairing",
+        name: { az: "Truffle Pairing", en: "Truffle Pairing", ru: "Truffle Pairing" },
         desc: {
-          az: "Sərin, duzlu qatıq içkisi.",
-          en: "Cool, lightly salted yoghurt drink.",
-          ru: "Прохладный, слегка солёный йогуртовый напиток."
+          az: "Truffle burger, Parmesan Truffle kartof fri və 0.5L içki.",
+          en: "Truffle burger, Parmesan Truffle fries and a 0.5L drink.",
+          ru: "Бургер Truffle, картофель Parmesan Truffle и напиток 0.5 л."
         },
-        price: "2.00 ₼", tags: []
-      },
-      {
-        id: "shake-vanilla",
-        name: { az: "Vanil milkşeyk", en: "Vanilla Milkshake", ru: "Ванильный милкшейк" },
-        desc: {
-          az: "Qatı, kremli, əsl vanillə çalınır.",
-          en: "Thick, creamy, blended with real vanilla.",
-          ru: "Густой, сливочный, с настоящей ванилью."
-        },
-        price: "6.00 ₼", tags: []
+        price: "27.00 ₼", img: "assets/img/menu/truffle-pairing.jpg", tags: []
       }
     ]
   },
   {
-    category: "desserts",
-    name: { az: "Desertlər", en: "Desserts", ru: "Десерты" },
+    category: "lemonades",
+    name: { az: "Limonadlar", en: "Lemonades", ru: "Лимонады" },
     items: [
       {
-        id: "brownie",
-        name: { az: "Şokoladlı brauni", en: "Choco Brownie", ru: "Шоколадный брауни" },
-        desc: {
-          az: "İsti, yapışqan brauni — üstündə kakao.",
-          en: "Warm, fudgy brownie dusted with cocoa.",
-          ru: "Тёплый тягучий брауни, посыпанный какао."
-        },
-        price: "5.50 ₼", tags: []
+        id: "lemonade-mango-maracuya",
+        name: { az: "Mango & Maracuyá", en: "Mango & Maracuyá", ru: "Манго & Маракуйя" },
+        desc: { az: "Təzə limonad, 400 ml.", en: "Fresh lemonade, 400 ml.", ru: "Свежий лимонад, 400 мл." },
+        price: "8.00 ₼", img: "assets/img/menu/mango-maracuy-lemonade-400-ml.jpg", tags: []
       },
       {
-        id: "cheesecake",
-        name: { az: "Çizkeyk", en: "Cheesecake", ru: "Чизкейк" },
-        desc: {
-          az: "Kremli Nyu-York çizkeyki, giləmeyvə sousu ilə.",
-          en: "Creamy New York cheesecake with berry drizzle.",
-          ru: "Нежный нью-йоркский чизкейк с ягодным соусом."
-        },
-        price: "6.50 ₼", tags: []
+        id: "lemonade-strawberry",
+        name: { az: "Strawberry", en: "Strawberry", ru: "Клубника" },
+        desc: { az: "Təzə limonad, 400 ml.", en: "Fresh lemonade, 400 ml.", ru: "Свежий лимонад, 400 мл." },
+        price: "8.00 ₼", img: "assets/img/menu/strawberry-lemonade-400-ml.jpg", tags: []
       },
       {
-        id: "cinnamon-bites",
-        name: { az: "Darçınlı tikələr", en: "Cinnamon Bites", ru: "Коричные кусочки" },
-        desc: {
-          az: "İsti xəmir tikələri, darçın-şəkər qarışığında.",
-          en: "Warm dough bites rolled in cinnamon sugar.",
-          ru: "Тёплые кусочки теста в коричном сахаре."
-        },
-        price: "4.90 ₼", tags: ["new"]
+        id: "lemonade-apple-lime",
+        name: { az: "Apple & Lime", en: "Apple & Lime", ru: "Яблоко & Лайм" },
+        desc: { az: "Təzə limonad, 400 ml.", en: "Fresh lemonade, 400 ml.", ru: "Свежий лимонад, 400 мл." },
+        price: "8.00 ₼", img: "assets/img/menu/apple-lime-lemonade-400-ml.jpg", tags: []
       },
       {
-        id: "ice-cream",
-        name: { az: "Dondurma kasası", en: "Ice Cream Cup", ru: "Мороженое в стакане" },
-        desc: {
-          az: "İki kürə vanil dondurma, seçimlə şokolad sousu.",
-          en: "Two scoops of vanilla, optional chocolate sauce.",
-          ru: "Два шарика ванильного, по желанию шоколадный соус."
-        },
-        price: "3.50 ₼", tags: ["veg"]
+        id: "lemonade-coconut-lychee",
+        name: { az: "Coconut & Lychee", en: "Coconut & Lychee", ru: "Кокос & Личи" },
+        desc: { az: "Təzə limonad, 400 ml.", en: "Fresh lemonade, 400 ml.", ru: "Свежий лимонад, 400 мл." },
+        price: "8.00 ₼", img: "assets/img/menu/coconut-lychee-lemonade-400-ml.jpg", tags: []
+      }
+    ]
+  },
+  {
+    category: "softdrinks",
+    name: { az: "Sərinləşdirici İçkilər", en: "Soft Drinks", ru: "Напитки" },
+    items: [
+      {
+        id: "coca-cola",
+        name: { az: "Coca-Cola", en: "Coca-Cola", ru: "Coca-Cola" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/coca-cola-330-ml.jpg", tags: []
+      },
+      {
+        id: "coca-cola-zero",
+        name: { az: "Coca-Cola Zero", en: "Coca-Cola Zero", ru: "Coca-Cola Zero" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/coca-cola-zero-330-ml.jpg", tags: []
+      },
+      {
+        id: "fanta",
+        name: { az: "Fanta", en: "Fanta", ru: "Fanta" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/fanta-330-ml.jpg", tags: []
+      },
+      {
+        id: "sprite",
+        name: { az: "Sprite", en: "Sprite", ru: "Sprite" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/sprite-330-ml.jpg", tags: []
+      },
+      {
+        id: "fuse-tea-peach",
+        name: { az: "Fuse Tea Şaftalı", en: "Fuse Tea Peach", ru: "Fuse Tea Персик" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/fuse-tea-ice-tea-aftal-330-ml.jpg", tags: []
+      },
+      {
+        id: "fuse-tea-mango-pineapple",
+        name: { az: "Fuse Tea Manqo-Ananas", en: "Fuse Tea Mango-Pineapple", ru: "Fuse Tea Манго-Ананас" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/fuse-tea-ice-tea-manqo-ananas-330-ml.jpg", tags: []
+      },
+      {
+        id: "fuse-tea-lemon",
+        name: { az: "Fuse Tea Limon", en: "Fuse Tea Lemon", ru: "Fuse Tea Лимон" },
+        desc: { az: "330 ml", en: "330 ml", ru: "330 мл" },
+        price: "4.00 ₼", img: "assets/img/menu/fuse-tea-ice-tea-limon-330-ml.jpg", tags: []
+      },
+      {
+        id: "sirab-sparkling",
+        name: { az: "Sirab Qazlı", en: "Sirab Sparkling", ru: "Sirab Газированная" },
+        desc: { az: "500 ml", en: "500 ml", ru: "500 мл" },
+        price: "2.00 ₼", img: "assets/img/menu/sirab-qazl-500-ml.jpg", tags: []
+      },
+      {
+        id: "sirab-still",
+        name: { az: "Sirab Qazsız", en: "Sirab Still", ru: "Sirab Негазированная" },
+        desc: { az: "500 ml", en: "500 ml", ru: "500 мл" },
+        price: "2.00 ₼", img: "assets/img/menu/sirab-qazs-z-500-ml.jpg", tags: []
+      }
+    ]
+  },
+  {
+    category: "coffee",
+    name: { az: "Qəhvə", en: "Coffee", ru: "Кофе" },
+    items: [
+      {
+        id: "americano",
+        name: { az: "Americano", en: "Americano", ru: "Американо" },
+        desc: { az: "", en: "", ru: "" },
+        price: "5.00 ₼", img: "assets/img/menu/americano.jpg", tags: []
+      },
+      {
+        id: "latte",
+        name: { az: "Latte", en: "Latte", ru: "Латте" },
+        desc: { az: "", en: "", ru: "" },
+        price: "6.00 ₼", img: "assets/img/menu/latte.jpg", tags: []
+      },
+      {
+        id: "cappuccino",
+        name: { az: "Cappuccino", en: "Cappuccino", ru: "Капучино" },
+        desc: { az: "", en: "", ru: "" },
+        price: "6.00 ₼", img: "assets/img/menu/cappuccino.jpg", tags: []
+      },
+      {
+        id: "flat-white",
+        name: { az: "Flat White", en: "Flat White", ru: "Флэт Уайт" },
+        desc: { az: "", en: "", ru: "" },
+        price: "6.50 ₼", img: "assets/img/menu/flat-white.jpg", tags: []
+      },
+      {
+        id: "raf",
+        name: { az: "Raf", en: "Raf", ru: "Раф" },
+        desc: { az: "", en: "", ru: "" },
+        price: "7.00 ₼", img: "assets/img/menu/raf.jpg", tags: []
+      },
+      {
+        id: "caramel-macchiato",
+        name: { az: "Caramel Macchiato", en: "Caramel Macchiato", ru: "Карамель Макиато" },
+        desc: { az: "", en: "", ru: "" },
+        price: "6.50 ₼", img: "assets/img/menu/caramel-machiato.jpg", tags: []
+      },
+      {
+        id: "ice-americano",
+        name: { az: "Ice Americano", en: "Ice Americano", ru: "Айс Американо" },
+        desc: { az: "", en: "", ru: "" },
+        price: "7.00 ₼", img: "assets/img/menu/ice-americano.jpg", tags: []
+      },
+      {
+        id: "ice-latte",
+        name: { az: "Ice Latte", en: "Ice Latte", ru: "Айс Латте" },
+        desc: { az: "", en: "", ru: "" },
+        price: "7.50 ₼", img: "assets/img/menu/ice-latte.jpg", tags: []
       }
     ]
   }
