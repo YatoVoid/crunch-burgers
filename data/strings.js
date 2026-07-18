@@ -22,6 +22,10 @@ window.I18N = {
 
     "home.popular.eyebrow": "Sevimlilər", "home.popular.title": "Ən çox sifariş olunan",
     "home.popular.sub": "Menyudan çıxmayan klassiklər.",
+    "home.prod.1d": "İkiqat smash köftə, cheddar, crunch sousu",
+    "home.prod.2d": "Toyuq tenderləri, kartof fri, Texas tost",
+    "home.prod.3d": "Toyuq tenderləri, bal, turşu, crunch sousu",
+    "home.prod.4d": "CRUNCH üslubunda zəngin kartof fri",
 
     "home.craft.eyebrow": "Bizim üsul", "home.craft.title": "Qısayol yoxdur",
     "home.craft.1t": "Sifarişlə əzilir", "home.craft.1b": "Hər köftə isti tavada, siz sifariş verəndə əzilir.",
@@ -117,6 +121,10 @@ window.I18N = {
 
     "home.popular.eyebrow": "Favourites", "home.popular.title": "Most ordered",
     "home.popular.sub": "The classics that never leave the menu.",
+    "home.prod.1d": "Double smash patty, cheddar, crunch sauce",
+    "home.prod.2d": "Chicken tenders, fries, Texas toast",
+    "home.prod.3d": "Chicken tenders, honey, pickles, crunch sauce",
+    "home.prod.4d": "Loaded fries, CRUNCH style",
 
     "home.craft.eyebrow": "Our way", "home.craft.title": "No shortcuts",
     "home.craft.1t": "Smashed to order", "home.craft.1b": "Every patty smashed on a hot flat-top the moment you order.",
@@ -212,6 +220,10 @@ window.I18N = {
 
     "home.popular.eyebrow": "Любимое", "home.popular.title": "Чаще всего заказывают",
     "home.popular.sub": "Классика, которая не покидает меню.",
+    "home.prod.1d": "Двойная котлета смэш, чеддер, соус crunch",
+    "home.prod.2d": "Куриные стрипсы, картофель фри, техасский тост",
+    "home.prod.3d": "Куриные стрипсы, мёд, огурчики, соус crunch",
+    "home.prod.4d": "Картофель фри в стиле CRUNCH",
 
     "home.craft.eyebrow": "Наш подход", "home.craft.title": "Без компромиссов",
     "home.craft.1t": "Жарим под заказ", "home.craft.1b": "Каждую котлету обжариваем на раскалённой плите, как только вы заказали.",
