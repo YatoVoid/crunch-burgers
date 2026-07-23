@@ -27,9 +27,16 @@
 .hero-stats .stat b { font-family: var(--font-display); font-size: var(--fs-700); color: var(--c-mustard); display: block; }
 .hero-stats .stat span { font-size: var(--fs-200); letter-spacing: .1em; text-transform: uppercase; color: #A6A6A6; }
 
-@media (min-width: 900px) {
+@media (min-width: 900px), (max-height: 560px) {
   .hero-grid { grid-template-columns: 1.05fr .95fr; gap: var(--sp-12); }
   .hero-cta .btn { flex: 0 0 auto; }
+}
+/* Landscape phones and other short, narrow windows: the forced
+   full-viewport height pushes the photo and stats below the fold even
+   with the two-column layout above, so let the hero size to content
+   instead of forcing 100svh. */
+@media (max-height: 560px) and (max-width: 899px) {
+  .hero { min-height: auto; }
 }
 
 /* — Marquee promo — */
